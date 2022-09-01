@@ -1,9 +1,12 @@
 import React from 'react';
+import CardControl from './CardControl'
+import Header from './Header'
 
 function App() {
   return (
     <React.Fragment>
-      <h1>Flash Cards</h1>
+      <Header />
+      <CardControl />
     </React.Fragment>
    
   );
