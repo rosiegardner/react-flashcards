@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import NewCardForm from './NewCardForm';
 import CardList from './CardList';
 import EditCardForm from './EditCardForm';
 import CardDetail from './CardDetail';
+import { db } from './../firebase.js';
+import { collection, addDoc } from 'firebase/firestore';
 
 function CardControl() {
   const [selectedCard, setSelectedCard] = useState(null);
